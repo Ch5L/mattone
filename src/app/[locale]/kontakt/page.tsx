@@ -28,8 +28,8 @@ function ContactContent() {
           <div className="bg-white dark:bg-[#2a231c] rounded-xl p-6 md:p-8 shadow-sm border border-mattone-cream/50 dark:border-[#3d3229]">
             <div className="space-y-2 md:space-y-3 text-mattone-text text-sm md:text-base">
               <p className="font-heading text-xl md:text-2xl font-semibold text-mattone-brown dark:text-mattone-cream text-left mb-4">{t('company')}</p>
-              <p className="text-left">{t('street')}</p>
-              <p className="text-left">{t('city')}</p>
+              <p className="text-left dark:text-gray-100">{t('street')</p>
+              <p className="text-left dark:text-gray-100">{t('city')</p>
               <div className="pt-4 md:pt-5 space-y-3 border-t border-mattone-cream dark:border-[#3d3229] mt-4">
                 <p className="text-left flex items-center gap-2">
                   <span className="text-mattone-gold">📞</span>
