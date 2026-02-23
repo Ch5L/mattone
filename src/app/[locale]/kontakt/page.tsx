@@ -32,22 +32,22 @@ function ContactContent() {
               <p className="text-left">{t('city')}</p>
               <div className="pt-4 md:pt-5 space-y-3 border-t border-mattone-cream mt-4">
                 <p className="text-left flex items-center gap-2">
-                  <span className="text-mattone-gold">📞</span>
+                  <span className="text-mattone-gold">\U0001f4de</span>
                   {t('phone_label')}: <a href={`tel:${t('phone')}`} className="text-mattone-gold hover:underline font-medium">{t('phone')}</a>
                 </p>
                 <p className="text-left flex items-center gap-2">
-                  <span className="text-mattone-gold">✉️</span>
+                  <span className="text-mattone-gold">\u2709\ufe0f</span>
                   {t('email_label')}: <a href={`mailto:${t('email')}`} className="text-mattone-gold hover:underline font-medium">{t('email')}</a>
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Google Maps embed - zoomed in more (z=17) */}
+          {/* Google Maps embed - search by place name for labeled marker */}
           <div className="animate-fade-in-up delay-200">
             <div className="rounded-xl overflow-hidden shadow-sm border border-mattone-cream/50">
               <iframe
-                src="https://www.google.com/maps?q=47.73779,16.20902&z=17&output=embed"
+                src="https://www.google.com/maps?q=Mattone+Apartments+F%C3%B6hrenauerstra%C3%9Fe+7+Lanzenkirchen&z=17&output=embed"
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
