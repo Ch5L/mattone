@@ -11,7 +11,8 @@
     "typC": "Typ C",
     "typD": "Typ D",
     "offers": "Angebote",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "compare": "Vergleich"
   },
   "hero": {
     "welcome": "Willkommen"
@@ -190,5 +191,26 @@
         "rating": "5"
       }
     ]
+  },
+  "compare": {
+    "title": "Apartment-Vergleich",
+    "subtitle": "Alle Typen auf einen Blick",
+    "size": "Größe",
+    "bedrooms": "Schlafzimmer",
+    "max_guests": "Max. Personen",
+    "balcony": "Balkon",
+    "terrace": "Terrasse",
+    "separate_wc": "Separates WC",
+    "kitchen": "Küche",
+    "air_con": "Klimaanlage",
+    "flatscreen": "Flatscreen TV",
+    "wifi": "Gratis WLAN",
+    "nespresso": "Nespresso",
+    "breakfast": "Frühstück inkl.",
+    "parking": "Gratis Parkplatz",
+    "partial": "Teilweise",
+    "footnote_bedroom": "Kombinierter Wohn-/Schlafbereich",
+    "footnote_partial": "Teilweise vorhanden (je nach Apartment)",
+    "footnote_double_tv": "Flatscreen in Wohn- und Schlafzimmer"
   }
 }

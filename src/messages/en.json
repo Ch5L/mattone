@@ -11,7 +11,8 @@
     "typC": "Type C",
     "typD": "Type D",
     "offers": "Offers",
-    "contact": "Contact"
+    "contact": "Contact",
+    "compare": "Compare"
   },
   "hero": {
     "welcome": "Welcome"
@@ -190,5 +191,26 @@
         "rating": "5"
       }
     ]
+  },
+  "compare": {
+    "title": "Apartment Comparison",
+    "subtitle": "All types at a glance",
+    "size": "Size",
+    "bedrooms": "Bedrooms",
+    "max_guests": "Max. Guests",
+    "balcony": "Balcony",
+    "terrace": "Terrace",
+    "separate_wc": "Separate WC",
+    "kitchen": "Kitchen",
+    "air_con": "Air Conditioning",
+    "flatscreen": "Flatscreen TV",
+    "wifi": "Free WiFi",
+    "nespresso": "Nespresso",
+    "breakfast": "Breakfast incl.",
+    "parking": "Free Parking",
+    "partial": "Partial",
+    "footnote_bedroom": "Combined living/sleeping area",
+    "footnote_partial": "Partially available (depending on apartment)",
+    "footnote_double_tv": "Flatscreen in both living room and bedroom"
   }
 }

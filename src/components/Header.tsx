@@ -55,6 +55,14 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+                <li className="border-t border-white/10 mt-1 pt-1">
+                    <Link
+                      href="/apartments/vergleich"
+                      className="block px-4 py-2 text-white hover:text-mattone-gold hover:bg-white/5 transition-colors"
+                    >
+                      {t('compare')}
+                    </Link>
+                  </li>
               </ul>
             </li>
             <li>
@@ -104,6 +112,13 @@ export default function Header() {
                     {t(typ)}
                   </Link>
                 ))}
+                <Link
+                    href="/apartments/vergleich"
+                    className="block text-white/80 hover:text-mattone-gold py-1.5 pl-6 border-t border-white/10 mt-1 pt-1.5"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {t('compare')}
+                  </Link>
               </div>
             </li>
             <li>
