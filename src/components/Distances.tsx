@@ -21,7 +21,7 @@ export default function Distances() {
   const renderRow = (key: string) => {
     const url = linkedItems[key] ? t(`distances.${linkedItems[key]}`) : null;
     const label = url ? (
-      <a href={url} target="_blank" rel="noopener noreferrer" className="text-mattone-brown font-medium hover:text-mattone-gold transition-colors underline decoration-mattone-gold/30 underline-offset-2">
+      <a href={url} target="_blank" rel="noopener noreferrer" className="text-mattone-gold font-medium hover:text-mattone-brown transition-colors underline underline-offset-2">
         {t(`distances.${key}`)}
       </a>
     ) : (
