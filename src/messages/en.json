@@ -6,10 +6,10 @@
   "nav": {
     "home": "Home",
     "apartments": "Apartments",
-    "typA": "Apartments Type A",
-    "typB": "Apartments Type B",
-    "typC": "Apartments Type C",
-    "typD": "Apartments Type D",
+    "typA": "Type A",
+    "typB": "Type B",
+    "typC": "Type C",
+    "typD": "Type D",
     "offers": "Offers",
     "contact": "Contact"
   },
@@ -71,7 +71,7 @@
   },
   "apartments": {
     "typA": {
-      "title": "Apartments Type A",
+      "title": "Type A",
       "subtitle": "Large apartment with 2 bedrooms",
       "cardText": "2 Bedrooms - 4 Beds",
       "description": "These apartments of up to 85m² are divided into an entrance hall with spacious wardrobe, bathroom, separate WC, storage room, 2 bedrooms and a large living and dining room. The apartment is fully air-conditioned.",
@@ -79,7 +79,7 @@
       "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. Large flat-screen TVs are available in both the living room and bedrooms. This apartment also features a separate WC. The living room and bedrooms each have their own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
     },
     "typB": {
-      "title": "Apartments Type B",
+      "title": "Type B",
       "subtitle": "Apartment with bedroom and balcony",
       "cardText": "With bedroom and balcony",
       "description": "Apartment with 55 m² floor space featuring 1 bedroom, 1 sofa bed, bathroom and balcony with views. Free WiFi is available in all rooms. The apartment is fully air-conditioned.",
@@ -87,7 +87,7 @@
       "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. Large flat-screen TVs are available in both the living room and bedrooms. Some of these apartments have a separate WC. The living room and bedroom have their own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
     },
     "typC": {
-      "title": "Apartments Type C",
+      "title": "Type C",
       "subtitle": "Apartment with balcony",
       "cardText": "Double bed and balcony",
       "description": "These 42 m² apartments consist of an entrance hall with wardrobe, kitchen with dining table, and a combined living and sleeping area with terrace or balcony. There is also the option to separate the sleeping area from the living area with a curtain. The apartment is fully air-conditioned.",
@@ -95,7 +95,7 @@
       "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. The combined living and sleeping area with large flat-screen TV has its own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
     },
     "typD": {
-      "title": "Apartments Type D",
+      "title": "Type D",
       "subtitle": "Apartment with bedroom and balcony",
       "cardText": "Double bed",
       "description": "These apartments from 40m² are located on the top floor and consist of a wardrobe area, kitchen with dining table, and a living and sleeping area. The high sloped ceilings create a pleasant and cosy atmosphere. The apartment is fully air-conditioned.",

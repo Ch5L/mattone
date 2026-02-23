@@ -6,10 +6,10 @@
   "nav": {
     "home": "Home",
     "apartments": "Apartments",
-    "typA": "Apartments Typ A",
-    "typB": "Apartments Typ B",
-    "typC": "Apartments Typ C",
-    "typD": "Apartments Typ D",
+    "typA": "Typ A",
+    "typB": "Typ B",
+    "typC": "Typ C",
+    "typD": "Typ D",
     "offers": "Angebote",
     "contact": "Kontakt"
   },
@@ -71,7 +71,7 @@
   },
   "apartments": {
     "typA": {
-      "title": "Apartments Typ A",
+      "title": "Typ A",
       "subtitle": "Großes Apartment mit 2 Schlafzimmern",
       "cardText": "2 Schlafzimmer - 4 Betten",
       "description": "Diese bis 85m² großen Apartments sind aufgeteilt in einen Vorraum mit großzügiger Garderobe, Badezimmer, WC, Abstellraum, 2 Schlafzimmer sowie ein großes Wohn- und Esszimmer. Das Apartment ist voll klimatisiert.",
@@ -79,7 +79,7 @@
       "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Sowohl in Wohn- als auch in Schlafzimmern sind große Flatscreen Fernseher vorhanden. In diesem Apartment befindet sich außerdem ein separates WC. Wohn- und Schlafzimmer verfügen jeweils über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
     },
     "typB": {
-      "title": "Apartments Typ B",
+      "title": "Typ B",
       "subtitle": "Apartment mit Schlafzimmer und Balkon",
       "cardText": "Mit Schlafzimmer und Balkon",
       "description": "Apartment mit 55 m² Grundfläche verfügt über 1 Schlafzimmer, 1 Schlafsofa, Badezimmer und Balkon mit Ausblick. Kostenfreies WLAN steht Ihnen in allen Zimmern zur Verfügung. Das Apartment ist voll klimatisiert.",
@@ -87,7 +87,7 @@
       "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Sowohl in Wohn- als auch in Schlafzimmern sind große Flatscreen Fernseher vorhanden. Diese Apartments haben teilweise ein separates WC. Wohn bzw. Schlafzimmer verfügen über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
     },
     "typC": {
-      "title": "Apartments Typ C",
+      "title": "Typ C",
       "subtitle": "Apartment mit Balkon",
       "cardText": "Doppelbett und Balkon",
       "description": "Diese Apartments mit 42 m² Grundfläche gliedern sich in einen Vorraum samt Garderobe mit Küche und Esstisch, sowie einen kombinierten Wohn- und Schlafbereich mit Terrasse bzw. Balkon. Zusätzlich besteht die Möglichkeit den Schlafbereich mit einem Vorhang vom Wohnbereich zu trennen. Das Apartment ist voll klimatisiert.",
@@ -95,7 +95,7 @@
       "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Der kombinierte Wohn- und Schlafbereich mit großem Flatscreen Fernseher verfügt über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
     },
     "typD": {
-      "title": "Apartments Typ D",
+      "title": "Typ D",
       "subtitle": "Apartment mit Schlafzimmer und Balkon",
       "cardText": "Doppelbett",
       "description": "Diese Apartments ab 40m² Grundfläche befinden sich im Dachgeschoß und gliedern sich in einen Garderobenbereich, Küche mit Esstisch, sowie einen Wohn- und Schlafbereich. Die hohen Dachschrägen sorgen für eine angenehme und gemütliche Atmosphäre. Das Apartment ist voll klimatisiert.",
