@@ -11,7 +11,7 @@ const rightColumn = [
 ] as const;
 
 const linkedItems: Record<string, string> = {
-  lebensmed: 'lebensmed_url',
+  lebensmed: 'lebensmed_url',  golf_linsberg: 'golf_linsberg_url',
   therme: 'therme_url',
   golf_foehrenwald: 'golf_foehrenwald_url',
 };
