@@ -25,26 +25,26 @@ function ContactContent() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start animate-fade-in-up delay-100">
-          {/* Contact details card */}
+          {/* Contact form */}
           <div className="bg-white dark:bg-[#2a231c] rounded-xl p-6 md:p-8 shadow-sm border border-mattone-cream/50 dark:border-[#3d3229]">
-            <div className="space-y-2 md:space-y-3 text-mattone-text text-sm md:text-base">
-              <p className="font-heading text-xl md:text-2xl font-semibold text-mattone-brown dark:text-mattone-cream text-left mb-4">{t('company')}</p>
-              <p className="text-left dark:text-gray-100">{t('street')}</p>
-              <p className="text-left dark:text-gray-100">{t('city')}</p>
-              <div className="pt-4 md:pt-5 space-y-3 border-t border-mattone-cream dark:border-[#3d3229] mt-4">
-                <p className="text-left flex items-center gap-2 dark:text-gray-100">
-                  <span className="text-mattone-gold">📞</span>
-                  {t('phone_label')}: <a href={`tel:${t('phone')}`} className="text-mattone-gold hover:underline font-medium">{t('phone')}</a>
-                </p>
-                <p className="text-left flex items-center gap-2 dark:text-gray-100">
-                  <span className="text-mattone-gold">✉️</span>
-                  {t('email_label')}: <a href={`mailto:${t('email')}`} className="text-mattone-gold hover:underline font-medium">{t('email')}</a>
-                </p>
-              </div>
+            <h2 className="font-heading text-xl md:text-2xl font-semibold text-mattone-brown dark:text-mattone-cream mb-5">{t('form_title')}</h2>
+            <ContactForm />
+            <div className="mt-6 pt-5 border-t border-mattone-cream dark:border-[#3d3229] space-y-2 text-sm text-mattone-text dark:text-gray-300">
+              <p className="flex items-center gap-2 dark:text-gray-100">
+                <span className="text-mattone-gold">📞</span>
+                <a href={`tel:${t('phone')}`} className="text-mattone-gold hover:underline font-medium">{t('phone')}</a>
+              </p>
+              <p className="flex items-center gap-2 dark:text-gray-100">
+                <span className="text-mattone-gold">✉️</span>
+                <a href={`mailto:${t('email')}`} className="text-mattone-gold hover:underline font-medium">{t('email')}</a>
+              </p>
+              <p className="text-mattone-text/60 dark:text-gray-500 text-xs mt-2">
+                {t('company')} · {t('street')} · {t('city')}
+              </p>
             </div>
           </div>
 
-          {/* Google Maps embed - search by place name for labeled marker */}
+          {/* Google Maps embed */}
           <div className="animate-fade-in-up delay-200">
             <div className="rounded-xl overflow-hidden shadow-sm border border-mattone-cream/50 dark:border-[#3d3229]">
               <iframe
