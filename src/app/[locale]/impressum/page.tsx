@@ -18,13 +18,14 @@ function ImpressumContent() {
   return (
     <section className="pt-20 md:pt-24 pb-12 md:pb-16 min-h-[60vh]">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="bg-mattone-cream py-6 md:py-8 px-4 rounded-xl text-center mb-8 md:mb-12">
-          <h1 className="text-2xl md:text-3xl font-semibold text-mattone-brown">{t('title')}</h1>
+        <div className="text-center mb-10 md:mb-14 animate-fade-in-up">
+          <h1 className="font-heading text-3xl md:text-4xl font-semibold text-mattone-brown mb-3">{t('title')}</h1>
+          <div className="section-divider" />
         </div>
 
-        <div className="bg-white rounded-xl p-5 md:p-8 shadow-sm max-w-2xl mx-auto">
+        <div className="bg-white rounded-xl p-5 md:p-8 shadow-sm max-w-2xl mx-auto border border-mattone-cream/50 animate-fade-in-up delay-100">
           <div className="space-y-2 md:space-y-3 text-mattone-text text-sm md:text-base">
-            <p className="text-lg md:text-xl font-semibold text-mattone-brown text-left">{t('company')}</p>
+            <p className="font-heading text-lg md:text-xl font-semibold text-mattone-brown text-left">{t('company')}</p>
             <p className="text-left">{t('street')}</p>
             <p className="text-left">{t('city')}</p>
             <p className="mt-2 text-left">Telefon: {t('phone')}</p>
@@ -35,7 +36,7 @@ function ImpressumContent() {
           </div>
 
           <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-mattone-cream">
-            <h3 className="text-base md:text-lg font-semibold text-mattone-brown mb-3">{t('bank_title')}</h3>
+            <h3 className="font-heading text-base md:text-lg font-semibold text-mattone-brown mb-3">{t('bank_title')}</h3>
             <div className="space-y-1 text-mattone-text text-sm md:text-base">
               <p className="text-left">Bankinstitut: {t('bank_name')}</p>
               <p className="text-left">BIC: {t('bic')}</p>
@@ -44,7 +45,7 @@ function ImpressumContent() {
           </div>
 
           <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-mattone-cream">
-            <h3 className="text-base md:text-lg font-semibold text-mattone-brown mb-3">{t('offenlegung_title')}</h3>
+            <h3 className="font-heading text-base md:text-lg font-semibold text-mattone-brown mb-3">{t('offenlegung_title')}</h3>
             <div className="space-y-1 text-mattone-text text-sm md:text-base">
               <p className="text-left">Medieninhaber: {t('medieninhaber')}</p>
               <p className="text-left">Firmensitz: {t('firmensitz')}</p>

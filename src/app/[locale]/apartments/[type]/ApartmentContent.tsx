@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import ContactSection from '@/components/ContactSection';
+import { Link } from '@/i18n/navigation';
 import Lightbox from '@/components/Lightbox';
 
 const apartmentData: Record<string, {
@@ -60,6 +60,7 @@ const apartmentData: Record<string, {
 export default function ApartmentContent({ type }: { type: string }) {
   const data = apartmentData[type];
   const t = useTranslations('apartments');
+  const nav = useTranslations('nav');
   const [lightbox, setLightbox] = useState<{ images: { src: string; alt: string }[]; index: number } | null>(null);
 
   if (!data) return null;
@@ -107,7 +108,7 @@ export default function ApartmentContent({ type }: { type: string }) {
       {/* Page header */}
       <section className="bg-mattone-cream py-6 md:py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-2xl md:text-3xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
+          <h1 className="font-heading text-2xl md:text-4xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
           <p className="text-mattone-gold mt-1 text-sm md:text-base text-center">{t(`${data.key}.subtitle`)}</p>
         </div>
       </section>
@@ -115,18 +116,18 @@ export default function ApartmentContent({ type }: { type: string }) {
       {/* Content */}
       <section className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-justify text-base md:text-lg text-mattone-text leading-relaxed mb-4">
+          <p className="text-justify text-base md:text-lg text-mattone-text leading-relaxed mb-4 animate-fade-in-up">
             {t(`${data.key}.description`)}
           </p>
           <p className="text-left text-mattone-brown font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 animate-fade-in-up delay-100">
             <div>
-              <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('equipment_title')}</h3>
+              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-3">{t('equipment_title')}</h3>
               <p className="text-justify text-mattone-text leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('info_title')}</h3>
+              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-3">{t('info_title')}</h3>
               <ul className="space-y-2 text-mattone-text text-sm md:text-base list-none">
                 <li className="text-left">{t('checkin')} · {t('checkout')}</li>
                 <li className="text-left">{t('cleaning')}</li>
@@ -138,8 +139,15 @@ export default function ApartmentContent({ type }: { type: string }) {
             </div>
           </div>
 
-          <div className="mt-8 md:mt-10 text-center">
-            <p className="text-center text-lg md:text-xl text-mattone-brown font-medium">{t('cta')}</p>
+          {/* CTA with contact button */}
+          <div className="mt-10 md:mt-14 text-center animate-fade-in-up delay-200">
+            <p className="text-center text-lg md:text-xl text-mattone-brown font-heading font-medium mb-5">{t('cta')}</p>
+            <Link
+              href="/kontakt"
+              className="inline-block bg-mattone-gold text-white px-8 py-3 rounded-lg text-sm md:text-base font-medium hover:bg-mattone-brown transition-colors duration-300 shadow-md hover:shadow-lg"
+            >
+              {nav('contact')} →
+            </Link>
           </div>
 
           {data.gallery.length > 0 && (
@@ -163,8 +171,6 @@ export default function ApartmentContent({ type }: { type: string }) {
           )}
         </div>
       </section>
-
-      <ContactSection />
 
       {lightbox && (
         <Lightbox

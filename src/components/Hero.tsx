@@ -13,9 +13,9 @@ export default function Hero() {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-10 text-center px-4">
-        <p className="text-white/90 text-2xl md:text-5xl tracking-[0.2em] md:tracking-[0.3em] uppercase mb-6 md:mb-8 font-light">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
+      <div className="relative z-10 text-center px-4 animate-fade-in-up">
+        <p className="text-white/90 font-heading text-3xl md:text-6xl tracking-[0.15em] md:tracking-[0.2em] uppercase mb-6 md:mb-8 font-light">
           {t('welcome')}
         </p>
         <Image

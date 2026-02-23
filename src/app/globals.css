@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @theme {
   --color-mattone-brown: #5c4a3a;
@@ -8,12 +9,23 @@
   --color-mattone-light: #faf7f2;
   --color-mattone-text: #4a4a4a;
   --color-mattone-accent: #8b7355;
-  --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-sans: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Justified text only where explicitly applied */
 .text-justify {
   text-align: justify;
+}
+
+/* Heading font utility */
+.font-heading {
+  font-family: var(--font-heading);
 }
 
 /* Hide scrollbar for floor plan thumbnails on mobile */
@@ -33,4 +45,34 @@ html, body {
 /* Smooth touch scrolling */
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Fade-in-up animation for scroll reveals */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* Staggered delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* Section divider */
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--color-mattone-gold);
+  margin: 0 auto;
 }

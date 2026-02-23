@@ -15,7 +15,7 @@ export default function Distances() {
 
   return (
     <div>
-      <h3 className="text-base md:text-lg font-semibold text-mattone-brown mb-2">
+      <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-2">
         {t('home.distances_title')}
       </h3>
       <p className="text-mattone-gold font-medium mb-4 text-sm md:text-base text-left">{t('home.golf_note')}</p>

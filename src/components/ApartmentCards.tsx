@@ -18,7 +18,7 @@ export default function ApartmentCards() {
         <Link
           key={apt.key}
           href={`/apartments/${apt.slug}`}
-          className="group relative overflow-hidden rounded-xl aspect-[3/4] md:aspect-[4/5] block"
+          className="group relative overflow-hidden rounded-xl aspect-[3/4] md:aspect-[4/5] block shadow-md hover:shadow-xl transition-shadow duration-300"
         >
           <Image
             src={apt.image}
@@ -30,7 +30,7 @@ export default function ApartmentCards() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="absolute inset-0 bg-mattone-gold/0 group-hover:bg-mattone-gold/20 transition-colors duration-300" />
           <div className="absolute bottom-0 left-0 right-0 p-3 md:p-6 text-white">
-            <h2 className="text-sm md:text-xl font-semibold mb-0.5 md:mb-1">{t(`${apt.key}.title`)}</h2>
+            <h2 className="font-heading text-sm md:text-xl font-semibold mb-0.5 md:mb-1">{t(`${apt.key}.title`)}</h2>
             <p className="text-white/80 text-xs md:text-sm mb-1 md:mb-3">{t(`${apt.key}.cardText`)}</p>
             <span className="text-mattone-gold text-xs md:text-sm group-hover:underline hidden sm:inline">
               {t('more_info')} →
