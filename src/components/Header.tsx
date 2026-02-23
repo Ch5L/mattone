@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { usePathname } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -10,24 +9,10 @@ export default function Header() {
   const t = useTranslations('nav');
   const [isOpen, setIsOpen] = useState(false);
   const [apartmentsOpen, setApartmentsOpen] = useState(false);
-  const [scrollbarWidth, setScrollbarWidth] = useState(0);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const measure = () => {
-      setScrollbarWidth(window.innerWidth - document.documentElement.clientWidth);
-    };
-    measure();
-    const timer = setTimeout(measure, 100);
-    return () => clearTimeout(timer);
-  }, [pathname]);
 
   return (
-    <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
-      <div
-        className="max-w-7xl mx-auto pl-4"
-        style={{ paddingRight: 16 + scrollbarWidth }}
-      >
+    <header className="bg-mattone-dark/90 backdrop-blur-sm sticky top-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
           <button

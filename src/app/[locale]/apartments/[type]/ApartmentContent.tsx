@@ -65,8 +65,8 @@ export default function ApartmentContent({ type }: { type: string }) {
 
   return (
     <>
-      {/* Hero image */}
-      <section className="relative h-[40vh] md:h-[50vh] min-h-[280px] md:min-h-[400px] mt-14 md:mt-16">
+      {/* Hero image - pulls up behind sticky header */}
+      <section className="relative h-[40vh] md:h-[50vh] min-h-[280px] md:min-h-[400px] -mt-14 md:-mt-16">
         <Image
           src={data.heroImage}
           alt={t(`${data.key}.title`)}
