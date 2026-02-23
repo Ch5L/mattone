@@ -69,7 +69,9 @@
     "autobahn_seebenstein_dist": "7 km",
     "therme_url": "https://www.linsbergasia.at",
     "golf_foehrenwald_url": "https://golfarea36.at",
-    "lebensmed_url": "https://www.lebensmed-baderlach.at"
+    "lebensmed_url": "https://www.lebensmed-baderlach.at",
+    "golf_linsberg": "Linsberg Golf Course",
+    "golf_linsberg_dist": "50m"
   },
   "apartments": {
     "typA": {

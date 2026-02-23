@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
 const leftColumn = [
-  'therme', 'lebensmed', 'golf_foehrenwald', 'reitstall', 'med_austron',
+  'therme', 'lebensmed', 'golf_linsberg', 'golf_foehrenwald', 'reitstall', 'med_austron',
   'bad_erlach', 'lanzenkirchen', 'bahnhof', 'billa', 'spar',
 ] as const;
 
@@ -42,7 +42,6 @@ export default function Distances() {
       <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown dark:text-mattone-cream mb-2">
         {t('home.distances_title')}
       </h3>
-      <p className="text-mattone-gold font-medium mb-4 text-sm md:text-base text-left">{t('home.golf_note')}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div className="space-y-2">
           {leftColumn.map(renderRow)}
