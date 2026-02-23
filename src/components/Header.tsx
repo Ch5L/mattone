@@ -1,44 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
-
-function useScrollbarWidth() {
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    const update = () => {
-      setWidth(window.innerWidth - document.documentElement.clientWidth);
-    };
-    update();
-
-    // Re-check when content changes (route navigation)
-    const observer = new ResizeObserver(update);
-    observer.observe(document.documentElement);
-    window.addEventListener('resize', update);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('resize', update);
-    };
-  }, []);
-
-  return width;
-}
 
 export default function Header() {
   const t = useTranslations('nav');
   const [isOpen, setIsOpen] = useState(false);
   const [apartmentsOpen, setApartmentsOpen] = useState(false);
-  const scrollbarWidth = useScrollbarWidth();
 
   return (
-    <header
-      className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 w-full z-50"
-      style={{ paddingRight: scrollbarWidth }}
-    >
+    <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
@@ -95,7 +68,8 @@ export default function Header() {
             </li>
           </ul>
 
-          <LanguageSwitcher />
+          {/* Spacer to keep justify-between working */}
+          <div className="w-[52px]" />
         </nav>
 
         {/* Mobile nav - slide down */}
@@ -141,6 +115,11 @@ export default function Header() {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* Language switcher - fixed to viewport, independent of header layout */}
+      <div className="fixed top-0 right-4 h-14 md:h-16 flex items-center z-50">
+        <LanguageSwitcher />
       </div>
     </header>
   );
