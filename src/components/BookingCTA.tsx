@@ -14,12 +14,12 @@ export default function BookingCTA() {
       </Link>
       <p className="text-mattone-text/50 dark:text-gray-500 text-xs mt-2">{t('best_price')}</p>
       <div className="mt-4">
-        <span className="text-mattone-text/40 dark:text-gray-600 text-xs">{t('or')}</span>
+        <span className="text-mattone-text/50 dark:text-gray-500 text-xs">{t('or')}</span>
         <a
           href="https://www.booking.com/hotel/at/mattone-apartments.html"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-mattone-gold/70 hover:text-mattone-gold transition-colors text-xs underline underline-offset-2 ml-1"
+          className="text-mattone-text/50 dark:text-gray-500 hover:text-mattone-gold transition-colors text-xs underline underline-offset-2 ml-1"
         >
           {t('booking')} →
         </a>

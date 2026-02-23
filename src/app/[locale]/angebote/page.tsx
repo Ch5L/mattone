@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import BookingCTA from '@/components/BookingCTA';
 
 export default async function AngebotePage({
   params,
@@ -23,6 +24,9 @@ function OffersContent() {
           <div className="section-divider" />
         </div>
         <p className="text-center text-mattone-text dark:text-gray-300 text-base md:text-lg animate-fade-in-up delay-100">{t('empty')}</p>
+        <div className="mt-10 animate-fade-in-up delay-200">
+          <BookingCTA />
+        </div>
       </div>
     </section>
   );
