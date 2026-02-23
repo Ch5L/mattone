@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import ScrollContainer from '@/components/ScrollContainer';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -102,11 +103,13 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-mattone-light text-mattone-text font-sans antialiased">
+      <body className="bg-mattone-light text-mattone-text font-sans antialiased h-screen overflow-hidden">
         <NextIntlClientProvider>
           <Header />
-          <main>{children}</main>
-          <Footer />
+          <ScrollContainer>
+            <main>{children}</main>
+            <Footer />
+          </ScrollContainer>
           <CookieConsent />
         </NextIntlClientProvider>
       </body>
