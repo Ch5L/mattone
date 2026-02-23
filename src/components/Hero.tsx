@@ -5,7 +5,7 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative h-[75vh] md:h-[85vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[55vh] md:h-[65vh] min-h-[380px] flex items-center justify-center overflow-hidden">
       <Image
         src="/images/theme/header-bg.jpg"
         alt="Mattone Apartments"
@@ -19,11 +19,11 @@ export default function Hero() {
           {t('welcome')}
         </p>
         <Image
-          src="/images/theme/logo_mattone_glow.png"
+          src="/images/theme/logo_mattone_clean.png"
           alt="Mattone Apartments"
-          width={450}
-          height={180}
-          className="mx-auto w-[280px] md:w-[450px] h-auto"
+          width={400}
+          height={340}
+          className="mx-auto w-[220px] md:w-[380px] h-auto drop-shadow-lg"
           priority
         />
       </div>

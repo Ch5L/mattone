@@ -78,11 +78,11 @@ export default function ApartmentContent({ type }: { type: string }) {
         />
         <div className="absolute inset-0 bg-black/30" />
         <Image
-          src="/images/theme/logo_mattone_glow.png"
+          src="/images/theme/logo_mattone_clean.png"
           alt="Mattone Apartments"
           width={200}
-          height={80}
-          className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-[120px] md:w-[200px] h-auto"
+          height={170}
+          className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-[100px] md:w-[160px] h-auto drop-shadow-lg"
         />
         {data.floorPlans.length > 0 && (
           <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex gap-2 overflow-x-auto max-w-[55%] md:max-w-none scrollbar-hide">

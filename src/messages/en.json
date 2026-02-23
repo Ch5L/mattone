@@ -155,5 +155,11 @@
   },
   "language": {
     "switch": "Deutsch"
+  },
+  "cookies": {
+    "title": "Cookie Notice",
+    "text": "This website uses cookies to provide you with the best possible experience. By using our website, you agree to the use of cookies in accordance with our privacy policy.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

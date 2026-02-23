@@ -155,5 +155,11 @@
   },
   "language": {
     "switch": "English"
+  },
+  "cookies": {
+    "title": "Cookie-Hinweis",
+    "text": "Diese Website verwendet Cookies, um Ihnen das bestmögliche Erlebnis zu bieten. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß unserer Datenschutzrichtlinie zu.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
   }
 }
