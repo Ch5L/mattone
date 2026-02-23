@@ -30,15 +30,15 @@ export default function CookieConsent() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 animate-fade-in-up">
-      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl border border-mattone-cream p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-        <div className="flex-1 text-sm text-mattone-text">
-          <p className="font-medium text-mattone-brown mb-1">{t('title')}</p>
+      <div className="max-w-4xl mx-auto bg-white dark:bg-[#2a231c] rounded-xl shadow-2xl border border-mattone-cream dark:border-[#3d3229] p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
+        <div className="flex-1 text-sm text-mattone-text dark:text-gray-300">
+          <p className="font-medium text-mattone-brown dark:text-mattone-cream mb-1">{t('title')}</p>
           <p className="leading-relaxed">{t('text')}</p>
         </div>
         <div className="flex gap-3 shrink-0">
           <button
             onClick={decline}
-            className="px-5 py-2 text-sm text-mattone-text border border-mattone-cream rounded-lg hover:bg-mattone-cream transition-colors"
+            className="px-5 py-2 text-sm text-mattone-text dark:text-gray-300 border border-mattone-cream dark:border-[#3d3229] rounded-lg hover:bg-mattone-cream dark:hover:bg-[#3d3229] transition-colors"
           >
             {t('decline')}
           </button>

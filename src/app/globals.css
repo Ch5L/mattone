@@ -13,6 +13,18 @@
   --font-heading: 'Playfair Display', Georgia, serif;
 }
 
+/* Dark mode: class-based toggling */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Dark mode color scheme */
+.dark {
+  --color-mattone-dark-bg: #1a1410;
+  --color-mattone-dark-surface: #241e18;
+  --color-mattone-dark-card: #2a231c;
+  --color-mattone-dark-border: #3d3229;
+  color-scheme: dark;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -74,4 +86,9 @@ html {
   height: 2px;
   background: var(--color-mattone-gold);
   margin: 0 auto;
+}
+
+/* Dark mode transitions */
+body, .dark-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -66,7 +66,7 @@ export default function ApartmentContent({ type }: { type: string }) {
   return (
     <>
       {/* Hero image - pulls up behind sticky header */}
-      <section className="relative h-[40vh] md:h-[50vh] min-h-[280px] md:min-h-[400px] -mt-14 md:-mt-16">
+      <section className="relative h-[40vh] md:h-[50vh] min-h-[280px] md:min-h-[400px] ">
         <Image
           src={data.heroImage}
           alt={t(`${data.key}.title`)}
@@ -104,29 +104,29 @@ export default function ApartmentContent({ type }: { type: string }) {
       </section>
 
       {/* Page header */}
-      <section className="bg-mattone-cream py-6 md:py-8">
+      <section className="bg-mattone-cream dark:bg-[#241e18] py-6 md:py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="font-heading text-2xl md:text-4xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
+          <h1 className="font-heading text-2xl md:text-4xl font-semibold text-mattone-brown dark:text-mattone-cream">{t(`${data.key}.title`)}</h1>
           <p className="text-mattone-gold mt-1 text-sm md:text-base text-center">{t(`${data.key}.subtitle`)}</p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-8 md:py-12">
+      <section className="py-8 md:py-12 dark:bg-[#1a1410]">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-justify text-base md:text-lg text-mattone-text leading-relaxed mb-4 animate-fade-in-up">
+          <p className="text-justify text-base md:text-lg text-mattone-text dark:text-gray-300 leading-relaxed mb-4 animate-fade-in-up">
             {t(`${data.key}.description`)}
           </p>
-          <p className="text-left text-mattone-brown font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
+          <p className="text-left text-mattone-brown dark:text-mattone-cream font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 animate-fade-in-up delay-100">
             <div>
-              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-3">{t('equipment_title')}</h3>
-              <p className="text-justify text-mattone-text leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
+              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown dark:text-mattone-cream mb-3">{t('equipment_title')}</h3>
+              <p className="text-justify text-mattone-text dark:text-gray-300 leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
             </div>
             <div>
-              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-3">{t('info_title')}</h3>
-              <ul className="space-y-2 text-mattone-text text-sm md:text-base list-none">
+              <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown dark:text-mattone-cream mb-3">{t('info_title')}</h3>
+              <ul className="space-y-2 text-mattone-text dark:text-gray-300 text-sm md:text-base list-none">
                 <li className="text-left">{t('checkin')} · {t('checkout')}</li>
                 <li className="text-left">{t('cleaning')}</li>
                 <li className="text-left">{t('kitchen_fee')}</li>
@@ -139,7 +139,7 @@ export default function ApartmentContent({ type }: { type: string }) {
 
           {/* CTA with Booking.com button */}
           <div className="mt-10 md:mt-14 text-center animate-fade-in-up delay-200">
-            <p className="text-center text-lg md:text-xl text-mattone-brown font-heading font-medium mb-5">{t('cta')}</p>
+            <p className="text-center text-lg md:text-xl text-mattone-brown dark:text-mattone-cream font-heading font-medium mb-5">{t('cta')}</p>
             <a
               href="https://www.booking.com/hotel/at/mattone-apartments.html"
               target="_blank"

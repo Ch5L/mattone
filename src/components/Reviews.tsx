@@ -17,7 +17,7 @@ export default function Reviews() {
       <div className="flex flex-col items-center mb-8 md:mb-12">
         <div className="flex items-baseline gap-2 mb-1">
           <span className="font-heading text-4xl md:text-5xl font-bold text-mattone-gold">{t('rating')}</span>
-          <span className="text-mattone-text text-sm md:text-base">{t('rating_text')}</span>
+          <span className="text-mattone-text dark:text-gray-300 text-sm md:text-base">{t('rating_text')}</span>
         </div>
         <div className="flex gap-1 mb-2">
           {[...Array(5)].map((_, i) => (
@@ -26,7 +26,7 @@ export default function Reviews() {
             </svg>
           ))}
         </div>
-        <p className="text-mattone-text/60 text-sm">{t('review_count')}</p>
+        <p className="text-mattone-text/60 dark:text-gray-400 text-sm">{t('review_count')}</p>
       </div>
 
       {/* Review cards */}
@@ -34,7 +34,7 @@ export default function Reviews() {
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="bg-white rounded-xl p-5 md:p-6 shadow-sm border border-mattone-cream/50 flex flex-col"
+            className="bg-white dark:bg-[#2a231c] rounded-xl p-5 md:p-6 shadow-sm border border-mattone-cream/50 dark:border-[#3d3229] flex flex-col"
           >
             <div className="flex gap-0.5 mb-3">
               {[...Array(5)].map((_, j) => (
@@ -43,10 +43,10 @@ export default function Reviews() {
                 </svg>
               ))}
             </div>
-            <p className="text-mattone-text text-sm md:text-base leading-relaxed flex-1 italic">
+            <p className="text-mattone-text dark:text-gray-300 text-sm md:text-base leading-relaxed flex-1 italic">
               &ldquo;{review.text}&rdquo;
             </p>
-            <p className="text-mattone-accent text-xs md:text-sm mt-3 font-medium">
+            <p className="text-mattone-accent dark:text-mattone-gold/70 text-xs md:text-sm mt-3 font-medium">
               — {review.author}
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function Reviews() {
           href="https://www.booking.com/reviews/at/hotel/mattone-apartments.html"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-mattone-gold hover:text-mattone-brown transition-colors text-sm underline underline-offset-2"
+          className="text-mattone-gold hover:text-mattone-brown dark:hover:text-mattone-cream transition-colors text-sm underline underline-offset-2"
         >
           {t('cta')} →
         </a>

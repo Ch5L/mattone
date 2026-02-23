@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   const t = useTranslations('nav');
@@ -11,7 +12,7 @@ export default function Header() {
   const [apartmentsOpen, setApartmentsOpen] = useState(false);
 
   return (
-    <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+    <header className="bg-mattone-dark/90 dark:bg-[#1a1410]/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
@@ -43,7 +44,7 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <ul className="absolute top-full left-0 bg-mattone-dark/95 backdrop-blur-sm min-w-48 py-2 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <ul className="absolute top-full left-0 bg-mattone-dark/95 dark:bg-[#1a1410]/95 backdrop-blur-sm min-w-48 py-2 rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                 {(['typA', 'typB', 'typC', 'typD'] as const).map((typ) => (
                   <li key={typ}>
                     <Link
@@ -68,7 +69,10 @@ export default function Header() {
             </li>
           </ul>
 
-          <LanguageSwitcher />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <LanguageSwitcher />
+          </div>
         </nav>
 
         {/* Mobile nav - slide down */}

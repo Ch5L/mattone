@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-mattone-dark py-10 md:py-14 relative">
+    <footer className="bg-mattone-dark dark:bg-[#0f0c09] py-10 md:py-14 relative">
       {/* Back to top */}
       <button
         onClick={scrollToTop}

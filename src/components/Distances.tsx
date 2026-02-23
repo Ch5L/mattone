@@ -25,20 +25,20 @@ export default function Distances() {
         {t(`distances.${key}`)}
       </a>
     ) : (
-      <span className="text-mattone-brown font-medium">{t(`distances.${key}`)}</span>
+      <span className="text-mattone-brown dark:text-gray-200 font-medium">{t(`distances.${key}`)}</span>
     );
 
     return (
-      <div key={key} className="flex justify-between text-xs md:text-sm border-b border-mattone-cream pb-1 gap-2">
+      <div key={key} className="flex justify-between text-xs md:text-sm border-b border-mattone-cream dark:border-[#3d3229] pb-1 gap-2">
         {label}
-        <span className="text-mattone-text shrink-0">{t(`distances.${key}_dist`)}</span>
+        <span className="text-mattone-text dark:text-gray-400 shrink-0">{t(`distances.${key}_dist`)}</span>
       </div>
     );
   };
 
   return (
     <div>
-      <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown mb-2">
+      <h3 className="font-heading text-lg md:text-xl font-semibold text-mattone-brown dark:text-mattone-cream mb-2">
         {t('home.distances_title')}
       </h3>
       <p className="text-mattone-gold font-medium mb-4 text-sm md:text-base text-left">{t('home.golf_note')}</p>
