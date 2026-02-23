@@ -16,7 +16,6 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  overflow-y: overlay;
 }
 
 /* Justified text only where explicitly applied */

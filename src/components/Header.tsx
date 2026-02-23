@@ -1,17 +1,44 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+
+function useScrollbarWidth() {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const update = () => {
+      setWidth(window.innerWidth - document.documentElement.clientWidth);
+    };
+    update();
+
+    // Re-check when content changes (route navigation)
+    const observer = new ResizeObserver(update);
+    observer.observe(document.documentElement);
+    window.addEventListener('resize', update);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', update);
+    };
+  }, []);
+
+  return width;
+}
 
 export default function Header() {
   const t = useTranslations('nav');
   const [isOpen, setIsOpen] = useState(false);
   const [apartmentsOpen, setApartmentsOpen] = useState(false);
+  const scrollbarWidth = useScrollbarWidth();
 
   return (
-    <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 w-full z-50">
+    <header
+      className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 w-full z-50"
+      style={{ paddingRight: scrollbarWidth }}
+    >
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
