@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mattone-brown: #5c4a3a;
+  --color-mattone-cream: #f5f0e8;
+  --color-mattone-gold: #c9a96e;
+  --color-mattone-dark: #3a2e24;
+  --color-mattone-light: #faf7f2;
+  --color-mattone-text: #4a4a4a;
+  --color-mattone-accent: #8b7355;
+  --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

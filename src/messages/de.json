@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Mattone Apartments",
+    "description": "Höchster Komfort und Einrichtungsstandard"
+  },
+  "nav": {
+    "home": "Home",
+    "apartments": "Apartments",
+    "typA": "Apartments Typ A",
+    "typB": "Apartments Typ B",
+    "typC": "Apartments Typ C",
+    "typD": "Apartments Typ D",
+    "offers": "Angebote",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "Willkommen"
+  },
+  "home": {
+    "title": "Mattone Apartments",
+    "subtitle": "Höchster Komfort und Einrichtungsstandard",
+    "intro": "In diesem neu errichteten Apartmenthaus in absoluter Einzellage im mediterranen Stil mit bestem Blick auf Rosalia, Schneeberg, Hohe Wand und Semmering befinden sich 14 hochwertig eingerichtete und klimatisierte Apartments mit höchstem Komfort und Einrichtungsstandard zwischen 40m² und 85m² Wohnfläche zuzüglich Balkonen und Terrassen. Unser Haus liegt gegenüber des Golfplatzes Linsberg sowie in unmittelbarer Nähe zur Therme Linsberg Asia und direkt am Rad- und Wanderweg Eurovelo 9.",
+    "kitchen": "Unsere Apartments sind mit vollausgestatteten Küchen mit modernsten Geräten sowie Nespressomaschinen, Wasserkocher und Mikrowelle eingerichtet. Alle Badezimmer verfügen über großzügige Walk-in Duschen und Haartrockner. Alle Apartments sind voll klimatisiert.",
+    "bedrooms": "In den Schlafzimmern erwarten Sie komfortable Boxspringbetten sowie in den Wohnbereichen gemütliche Sofas mit Ausziehmöglichkeit. Die einzelnen Apartments sind in großzügige Schlafzimmer sowie teilweise kombinierte Wohn- und Schlafräume unterteilt, welche alle mit großen modernen Flatscreens ausgestattet sind. Hier finden Sie nicht nur lokale, sondern auch internationale Programme in verschiedensten Sprachen. Desweiteren nutzen Sie im gesamten Haus das Internet über eine WLAN Verbindung kostenlos. Zusätzlich lassen sich Ihre geschäftlichen Tätigkeiten durch einen Schreibtisch einfach erledigen.",
+    "cleaning": "Die Apartments werden gereinigt sowie die Bettwäsche und die Handtücher gewechselt. Kosmetikartikel stehen Ihnen ebenfalls zur Verfügung.",
+    "parking": "Ihren PKW können Sie kostenlos am beleuchteten videoüberwachten Parkplatz in unmittelbarer Eingangsnähe abstellen. Unser Haus verfügt über ein modernes Schließkartensystem durch welches Sie bequem zu jeder Tageszeit in Ihre Unterkunft sowie am Parkplatz gelangen. Spätanreisende und Kurzentschlossene gelangen mittels Schließkasten direkt zu Ihren hinterlegten Schließkarten und können dadurch ebenfalls bequem und unkompliziert ihr Apartment beziehen.",
+    "breakfast": "Das Frühstück ist im Preis inbegriffen und wird durch einen unserer Partnerbetriebe zu einem vereinbarten Zeitpunkt direkt in Ihr Apartment geliefert.",
+    "dining": "Als weitere gastronomische Einrichtungen empfehlen wir Ihnen unsere Gasthäuser, Restaurants und Café Häuser in nächster Nähe. Nähere Informationen darüber finden Sie in den aufliegenden Informationsmappen in jedem Apartment, sowie im Rezeptionsbereich.",
+    "distances_title": "Entfernungen zu diversen Einrichtungen:",
+    "golf_note": "Golfplatz Linsberg direkt gegenüber"
+  },
+  "distances": {
+    "therme": "Therme Linsberg Asia",
+    "therme_dist": "1 km",
+    "lebensmed": "Lebens Med Zentrum",
+    "lebensmed_dist": "1,3 km",
+    "golf_foehrenwald": "Golfplatz Föhrenwald",
+    "golf_foehrenwald_dist": "4,5 km",
+    "reitstall": "Reitstall B54",
+    "reitstall_dist": "4,5 km",
+    "med_austron": "Med Austron",
+    "med_austron_dist": "12 km",
+    "bad_erlach": "Ortszentrum Bad Erlach",
+    "bad_erlach_dist": "1,4 km",
+    "lanzenkirchen": "Ortszentrum Lanzenkirchen",
+    "lanzenkirchen_dist": "2,4 km",
+    "bahnhof": "Bahnhof Bad Erlach",
+    "bahnhof_dist": "850m",
+    "billa": "Billa Bad Erlach",
+    "billa_dist": "1 km",
+    "spar": "Spar Bad Erlach",
+    "spar_dist": "1,2 km",
+    "semmering": "Semmering",
+    "semmering_dist": "35 km",
+    "schneeberg": "Schneeberg",
+    "schneeberg_dist": "27 km",
+    "hohe_wand": "Hohe Wand",
+    "hohe_wand_dist": "21 km",
+    "rosalia": "Rosalia",
+    "rosalia_dist": "15 km",
+    "autobahn_sued": "Autobahn Wr. Neustadt Süd",
+    "autobahn_sued_dist": "6 km",
+    "autobahn_seebenstein": "Autobahn Seebenstein",
+    "autobahn_seebenstein_dist": "7 km"
+  },
+  "apartments": {
+    "typA": {
+      "title": "Apartments Typ A",
+      "subtitle": "Großes Apartment mit 2 Schlafzimmern",
+      "cardText": "2 Schlafzimmer - 4 Betten",
+      "description": "Diese bis 85m² großen Apartments sind aufgeteilt in einen Vorraum mit großzügiger Garderobe, Badezimmer, WC, Abstellraum, 2 Schlafzimmer sowie ein großes Wohn- und Esszimmer. Das Apartment ist voll klimatisiert.",
+      "maxGuests": "Maximale Personenanzahl: 6 Erwachsene",
+      "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Sowohl in Wohn- als auch in Schlafzimmern sind große Flatscreen Fernseher vorhanden. In diesem Apartment befindet sich außerdem ein separates WC. Wohn- und Schlafzimmer verfügen jeweils über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
+    },
+    "typB": {
+      "title": "Apartments Typ B",
+      "subtitle": "Apartment mit Schlafzimmer und Balkon",
+      "cardText": "Mit Schlafzimmer und Balkon",
+      "description": "Apartment mit 55 m² Grundfläche verfügt über 1 Schlafzimmer, 1 Schlafsofa, Badezimmer und Balkon mit Ausblick. Kostenfreies WLAN steht Ihnen in allen Zimmern zur Verfügung. Das Apartment ist voll klimatisiert.",
+      "maxGuests": "Maximale Personenanzahl: 4 Erwachsene",
+      "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Sowohl in Wohn- als auch in Schlafzimmern sind große Flatscreen Fernseher vorhanden. Diese Apartments haben teilweise ein separates WC. Wohn bzw. Schlafzimmer verfügen über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
+    },
+    "typC": {
+      "title": "Apartments Typ C",
+      "subtitle": "Apartment mit Balkon",
+      "cardText": "Doppelbett und Balkon",
+      "description": "Diese Apartments mit 42 m² Grundfläche gliedern sich in einen Vorraum samt Garderobe mit Küche und Esstisch, sowie einen kombinierten Wohn- und Schlafbereich mit Terrasse bzw. Balkon. Zusätzlich besteht die Möglichkeit den Schlafbereich mit einem Vorhang vom Wohnbereich zu trennen. Das Apartment ist voll klimatisiert.",
+      "maxGuests": "Maximale Personenanzahl: 4 Erwachsene",
+      "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Der kombinierte Wohn- und Schlafbereich mit großem Flatscreen Fernseher verfügt über einen eigenen Balkon bzw. eine Terrasse. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
+    },
+    "typD": {
+      "title": "Apartments Typ D",
+      "subtitle": "Apartment mit Schlafzimmer und Balkon",
+      "cardText": "Doppelbett",
+      "description": "Diese Apartments ab 40m² Grundfläche befinden sich im Dachgeschoß und gliedern sich in einen Garderobenbereich, Küche mit Esstisch, sowie einen Wohn- und Schlafbereich. Die hohen Dachschrägen sorgen für eine angenehme und gemütliche Atmosphäre. Das Apartment ist voll klimatisiert.",
+      "maxGuests": "Maximale Personenanzahl: 4 Erwachsene",
+      "equipment": "Vollausgestattete Küche mit modernsten Geräten und Küchenutensilien sowie Nespressomaschine, Wasserkocher und Mikrowelle. Desweiteren ist das Badezimmer mit einem Haarföhn sowie kostenlosen Pflegeprodukten ausgestattet."
+    },
+    "equipment_title": "Ausstattung des Apartments:",
+    "info_title": "Weitere Informationen:",
+    "checkin": "Check in: ab 15:00 Uhr",
+    "checkout": "Check out: bis 10:00 Uhr",
+    "cleaning": "Die tägliche Reinigung der Apartments, sowie Bettwäsche und Handtücher sind im Preis inkludiert.",
+    "kitchen_fee": "Für stark verschmutzte Küchen müssen wir eine Reinigungspauschale von 25 € verrechnen.",
+    "no_pets": "Haustiere sind nicht gestattet.",
+    "wifi": "Kostenloser WLAN Zugang in allen Apartments, sowie im Außenbereich.",
+    "free_parking": "Kostenloser Parkplatz.",
+    "cta": "Gerne erstellen wir Ihnen ein Angebot für Ihr gewünschtes Apartment.",
+    "more_info": "mehr Information"
+  },
+  "offers": {
+    "title": "Angebote",
+    "empty": "Derzeit sind leider keine Angebote vorhanden."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "company": "MATTONE Apartments",
+    "street": "Föhrenauerstraße 7",
+    "city": "2821 Lanzenkirchen",
+    "phone": "02627/46428",
+    "phone_label": "Telefon",
+    "email": "apartments@mattone.at",
+    "email_label": "Email",
+    "website": "www.mattone.at",
+    "maps_text": "Unser Standort auf Google Maps:",
+    "maps_url": "https://goo.gl/maps/c4jFJUesgEv8kMdv6"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "company": "MATTONE GmbH",
+    "street": "Brombergerstrasse 3",
+    "city": "2822 Bad Erlach",
+    "phone": "02627/46428",
+    "email": "apartments@mattone.at",
+    "uid": "ATU 69740426",
+    "fn": "FN436640v",
+    "rechtsform": "GmbH",
+    "bank_title": "Bankverbindung",
+    "bank_name": "Sparkasse Bad Erlach",
+    "bic": "WINSATWNXXX",
+    "iban": "AT20 2026 7020 0008 1600",
+    "offenlegung_title": "Offenlegung gemäß §25 Mediengesetz",
+    "medieninhaber": "Mattone GmbH",
+    "firmensitz": "2822 Bad Erlach, Brombergerstrasse 3",
+    "gegenstand": "Vermietung und Verpachtung",
+    "geschaeftsfuehrer": "Martin Lizzi",
+    "blattlinie": "Informationen zu Mattone Apartments"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "agb": "AGB"
+  },
+  "language": {
+    "switch": "English"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Mattone Apartments",
+    "description": "Highest comfort and furnishing standards"
+  },
+  "nav": {
+    "home": "Home",
+    "apartments": "Apartments",
+    "typA": "Apartments Type A",
+    "typB": "Apartments Type B",
+    "typC": "Apartments Type C",
+    "typD": "Apartments Type D",
+    "offers": "Offers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome"
+  },
+  "home": {
+    "title": "Mattone Apartments",
+    "subtitle": "Highest comfort and furnishing standards",
+    "intro": "In this newly built apartment house in a secluded location in Mediterranean style with the best views of Rosalia, Schneeberg, Hohe Wand and Semmering, you will find 14 high-quality furnished and air-conditioned apartments with the highest comfort and furnishing standards between 40m² and 85m² of living space plus balconies and terraces. Our house is located opposite the Linsberg golf course, in the immediate vicinity of Therme Linsberg Asia and directly on the Eurovelo 9 cycling and hiking trail.",
+    "kitchen": "Our apartments are equipped with fully fitted kitchens with state-of-the-art appliances as well as Nespresso machines, kettles and microwaves. All bathrooms feature spacious walk-in showers and hair dryers. All apartments are fully air-conditioned.",
+    "bedrooms": "In the bedrooms, comfortable box-spring beds await you, while the living areas feature cosy sofas with pull-out function. The individual apartments are divided into spacious bedrooms and partially combined living and sleeping areas, all equipped with large modern flat-screen TVs. Here you will find not only local but also international programmes in various languages. Furthermore, you can use the internet via a free WiFi connection throughout the entire building. Additionally, a desk makes it easy to handle your business tasks.",
+    "cleaning": "The apartments are cleaned and bed linen and towels are changed. Toiletries are also available for you.",
+    "parking": "You can park your car free of charge in the illuminated, video-monitored car park in the immediate vicinity of the entrance. Our house has a modern key card system that allows you to conveniently access your accommodation and the car park at any time of day. Late arrivals and spontaneous guests can access their deposited key cards via a lock box, allowing them to easily and conveniently move into their apartment.",
+    "breakfast": "Breakfast is included in the price and is delivered directly to your apartment at an agreed time by one of our partner businesses.",
+    "dining": "As additional dining options, we recommend our local inns, restaurants and cafés in the immediate vicinity. Further information can be found in the information folders available in each apartment and in the reception area.",
+    "distances_title": "Distances to various facilities:",
+    "golf_note": "Linsberg Golf Course directly opposite"
+  },
+  "distances": {
+    "therme": "Therme Linsberg Asia",
+    "therme_dist": "1 km",
+    "lebensmed": "Lebens Med Centre",
+    "lebensmed_dist": "1.3 km",
+    "golf_foehrenwald": "Föhrenwald Golf Course",
+    "golf_foehrenwald_dist": "4.5 km",
+    "reitstall": "Riding Stable B54",
+    "reitstall_dist": "4.5 km",
+    "med_austron": "Med Austron",
+    "med_austron_dist": "12 km",
+    "bad_erlach": "Bad Erlach Town Centre",
+    "bad_erlach_dist": "1.4 km",
+    "lanzenkirchen": "Lanzenkirchen Town Centre",
+    "lanzenkirchen_dist": "2.4 km",
+    "bahnhof": "Bad Erlach Train Station",
+    "bahnhof_dist": "850m",
+    "billa": "Billa Bad Erlach",
+    "billa_dist": "1 km",
+    "spar": "Spar Bad Erlach",
+    "spar_dist": "1.2 km",
+    "semmering": "Semmering",
+    "semmering_dist": "35 km",
+    "schneeberg": "Schneeberg",
+    "schneeberg_dist": "27 km",
+    "hohe_wand": "Hohe Wand",
+    "hohe_wand_dist": "21 km",
+    "rosalia": "Rosalia",
+    "rosalia_dist": "15 km",
+    "autobahn_sued": "Motorway Wr. Neustadt South",
+    "autobahn_sued_dist": "6 km",
+    "autobahn_seebenstein": "Motorway Seebenstein",
+    "autobahn_seebenstein_dist": "7 km"
+  },
+  "apartments": {
+    "typA": {
+      "title": "Apartments Type A",
+      "subtitle": "Large apartment with 2 bedrooms",
+      "cardText": "2 Bedrooms - 4 Beds",
+      "description": "These apartments of up to 85m² are divided into an entrance hall with spacious wardrobe, bathroom, separate WC, storage room, 2 bedrooms and a large living and dining room. The apartment is fully air-conditioned.",
+      "maxGuests": "Maximum occupancy: 6 adults",
+      "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. Large flat-screen TVs are available in both the living room and bedrooms. This apartment also features a separate WC. The living room and bedrooms each have their own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
+    },
+    "typB": {
+      "title": "Apartments Type B",
+      "subtitle": "Apartment with bedroom and balcony",
+      "cardText": "With bedroom and balcony",
+      "description": "Apartment with 55 m² floor space featuring 1 bedroom, 1 sofa bed, bathroom and balcony with views. Free WiFi is available in all rooms. The apartment is fully air-conditioned.",
+      "maxGuests": "Maximum occupancy: 4 adults",
+      "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. Large flat-screen TVs are available in both the living room and bedrooms. Some of these apartments have a separate WC. The living room and bedroom have their own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
+    },
+    "typC": {
+      "title": "Apartments Type C",
+      "subtitle": "Apartment with balcony",
+      "cardText": "Double bed and balcony",
+      "description": "These 42 m² apartments consist of an entrance hall with wardrobe, kitchen with dining table, and a combined living and sleeping area with terrace or balcony. There is also the option to separate the sleeping area from the living area with a curtain. The apartment is fully air-conditioned.",
+      "maxGuests": "Maximum occupancy: 4 adults",
+      "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. The combined living and sleeping area with large flat-screen TV has its own balcony or terrace. The bathroom is equipped with a hair dryer and complimentary toiletries."
+    },
+    "typD": {
+      "title": "Apartments Type D",
+      "subtitle": "Apartment with bedroom and balcony",
+      "cardText": "Double bed",
+      "description": "These apartments from 40m² are located on the top floor and consist of a wardrobe area, kitchen with dining table, and a living and sleeping area. The high sloped ceilings create a pleasant and cosy atmosphere. The apartment is fully air-conditioned.",
+      "maxGuests": "Maximum occupancy: 4 adults",
+      "equipment": "Fully equipped kitchen with state-of-the-art appliances and utensils as well as Nespresso machine, kettle and microwave. The bathroom is equipped with a hair dryer and complimentary toiletries."
+    },
+    "equipment_title": "Apartment amenities:",
+    "info_title": "Additional information:",
+    "checkin": "Check-in: from 3:00 PM",
+    "checkout": "Check-out: by 10:00 AM",
+    "cleaning": "Daily apartment cleaning, as well as bed linen and towels are included in the price.",
+    "kitchen_fee": "A cleaning surcharge of €25 will be charged for heavily soiled kitchens.",
+    "no_pets": "Pets are not permitted.",
+    "wifi": "Free WiFi access in all apartments and outdoor areas.",
+    "free_parking": "Free parking.",
+    "cta": "We would be happy to prepare an offer for your desired apartment.",
+    "more_info": "more information"
+  },
+  "offers": {
+    "title": "Offers",
+    "empty": "Unfortunately, there are currently no offers available."
+  },
+  "contact": {
+    "title": "Contact",
+    "company": "MATTONE Apartments",
+    "street": "Föhrenauerstraße 7",
+    "city": "2821 Lanzenkirchen",
+    "phone": "02627/46428",
+    "phone_label": "Phone",
+    "email": "apartments@mattone.at",
+    "email_label": "Email",
+    "website": "www.mattone.at",
+    "maps_text": "Our location on Google Maps:",
+    "maps_url": "https://goo.gl/maps/c4jFJUesgEv8kMdv6"
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "company": "MATTONE GmbH",
+    "street": "Brombergerstrasse 3",
+    "city": "2822 Bad Erlach",
+    "phone": "02627/46428",
+    "email": "apartments@mattone.at",
+    "uid": "ATU 69740426",
+    "fn": "FN436640v",
+    "rechtsform": "GmbH",
+    "bank_title": "Bank Details",
+    "bank_name": "Sparkasse Bad Erlach",
+    "bic": "WINSATWNXXX",
+    "iban": "AT20 2026 7020 0008 1600",
+    "offenlegung_title": "Disclosure pursuant to §25 Media Act",
+    "medieninhaber": "Mattone GmbH",
+    "firmensitz": "2822 Bad Erlach, Brombergerstrasse 3",
+    "gegenstand": "Rental and leasing",
+    "geschaeftsfuehrer": "Martin Lizzi",
+    "blattlinie": "Information about Mattone Apartments"
+  },
+  "footer": {
+    "contact": "Contact",
+    "impressum": "Legal Notice",
+    "agb": "Terms & Conditions"
+  },
+  "language": {
+    "switch": "Deutsch"
+  }
+}
