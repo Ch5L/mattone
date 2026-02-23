@@ -67,7 +67,7 @@ export default function ApartmentContent({ type }: { type: string }) {
   return (
     <>
       {/* Hero image */}
-      <section className="relative h-[50vh] min-h-[400px] mt-16">
+      <section className="relative h-[40vh] md:h-[50vh] min-h-[280px] md:min-h-[400px] mt-14 md:mt-16">
         <Image
           src={data.heroImage}
           alt={t(`${data.key}.title`)}
@@ -81,22 +81,23 @@ export default function ApartmentContent({ type }: { type: string }) {
           alt="Mattone Apartments"
           width={200}
           height={80}
-          className="absolute bottom-6 right-6"
+          className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-[120px] md:w-[200px] h-auto"
         />
+        {/* Floor plans - horizontal scroll on mobile */}
         {data.floorPlans.length > 0 && (
-          <div className="absolute bottom-6 left-6 flex gap-2">
+          <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex gap-2 overflow-x-auto max-w-[60%] md:max-w-none scrollbar-hide">
             {data.floorPlans.map((fp, i) => (
               <button
                 key={fp.src}
                 onClick={() => setLightbox({ images: data.floorPlans, index: i })}
-                className="cursor-pointer"
+                className="cursor-pointer shrink-0"
               >
                 <Image
                   src={fp.src}
                   alt={fp.alt}
                   width={120}
                   height={82}
-                  className="rounded border-2 border-white/50 hover:border-mattone-gold transition-colors"
+                  className="rounded border-2 border-white/50 hover:border-mattone-gold transition-colors w-[80px] md:w-[120px] h-auto"
                 />
               </button>
             ))}
@@ -105,29 +106,29 @@ export default function ApartmentContent({ type }: { type: string }) {
       </section>
 
       {/* Page header */}
-      <section className="bg-mattone-cream py-8">
+      <section className="bg-mattone-cream py-6 md:py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-3xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
-          <p className="text-mattone-gold mt-1">{t(`${data.key}.subtitle`)}</p>
+          <h1 className="text-2xl md:text-3xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
+          <p className="text-mattone-gold mt-1 text-sm md:text-base">{t(`${data.key}.subtitle`)}</p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-12">
+      <section className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-lg text-mattone-text leading-relaxed mb-4">
+          <p className="text-base md:text-lg text-mattone-text leading-relaxed mb-4">
             {t(`${data.key}.description`)}
           </p>
-          <p className="text-mattone-brown font-medium mb-8">{t(`${data.key}.maxGuests`)}</p>
+          <p className="text-mattone-brown font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div>
               <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('equipment_title')}</h3>
-              <p className="text-mattone-text leading-relaxed">{t(`${data.key}.equipment`)}</p>
+              <p className="text-mattone-text leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('info_title')}</h3>
-              <ul className="space-y-2 text-mattone-text">
+              <ul className="space-y-2 text-mattone-text text-sm md:text-base">
                 <li>{t('checkin')} · {t('checkout')}</li>
                 <li>{t('cleaning')}</li>
                 <li>{t('kitchen_fee')}</li>
@@ -138,12 +139,12 @@ export default function ApartmentContent({ type }: { type: string }) {
             </div>
           </div>
 
-          <div className="mt-10 text-center">
-            <p className="text-xl text-mattone-brown font-medium">{t('cta')}</p>
+          <div className="mt-8 md:mt-10 text-center">
+            <p className="text-lg md:text-xl text-mattone-brown font-medium">{t('cta')}</p>
           </div>
 
           {data.gallery.length > 0 && (
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
               {data.gallery.map((img, i) => (
                 <button
                   key={img.src}
@@ -155,7 +156,7 @@ export default function ApartmentContent({ type }: { type: string }) {
                     alt={img.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   />
                 </button>
               ))}

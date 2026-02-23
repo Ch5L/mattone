@@ -15,3 +15,22 @@
 p {
   text-align: justify;
 }
+
+/* Hide scrollbar for floor plan thumbnails on mobile */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Smooth touch scrolling */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -5,11 +5,11 @@ export default function ContactSection() {
   const t = useTranslations('contact');
 
   return (
-    <section className="bg-mattone-cream py-16">
+    <section className="bg-mattone-cream py-12 md:py-16">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="text-center">
-            <p className="text-mattone-brown mb-4">{t('maps_text')}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="text-center order-2 md:order-1">
+            <p className="text-mattone-brown mb-4 text-sm md:text-base">{t('maps_text')}</p>
             <a
               href={t('maps_url')}
               target="_blank"
@@ -21,13 +21,14 @@ export default function ContactSection() {
                 alt="Google Maps"
                 width={80}
                 height={80}
+                className="w-16 md:w-20 h-auto"
               />
             </a>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-sm">
-            <h3 className="text-xl font-semibold text-mattone-brown mb-4">{t('title')}</h3>
-            <div className="space-y-2 text-mattone-text">
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-sm order-1 md:order-2">
+            <h3 className="text-lg md:text-xl font-semibold text-mattone-brown mb-4">{t('title')}</h3>
+            <div className="space-y-2 text-mattone-text text-sm md:text-base">
               <p className="font-medium">{t('company')}</p>
               <p>{t('city')}</p>
               <p>{t('street')}</p>

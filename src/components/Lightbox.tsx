@@ -18,6 +18,7 @@ export default function Lightbox({
   onClose: () => void;
 }) {
   const [index, setIndex] = useState(initialIndex);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -37,13 +38,33 @@ export default function Lightbox({
     };
   }, [handleKeyDown]);
 
+  // Swipe support for mobile
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart === null) return;
+    const diff = touchStart - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        setIndex(index < images.length - 1 ? index + 1 : 0);
+      } else {
+        setIndex(index > 0 ? index - 1 : images.length - 1);
+      }
+    }
+    setTouchStart(null);
+  };
+
   return (
     <div
-      className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center"
       onClick={onClose}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <button
-        className="absolute top-4 right-4 text-white text-4xl hover:text-mattone-gold z-10 leading-none"
+        className="absolute top-3 right-4 text-white text-4xl hover:text-mattone-gold z-10 leading-none p-2"
         onClick={onClose}
       >
         ×
@@ -51,7 +72,7 @@ export default function Lightbox({
       {images.length > 1 && (
         <>
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-mattone-gold z-10"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white text-4xl md:text-5xl hover:text-mattone-gold z-10 p-2 hidden md:block"
             onClick={(e) => {
               e.stopPropagation();
               setIndex(index > 0 ? index - 1 : images.length - 1);
@@ -60,7 +81,7 @@ export default function Lightbox({
             ‹
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-mattone-gold z-10"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white text-4xl md:text-5xl hover:text-mattone-gold z-10 p-2 hidden md:block"
             onClick={(e) => {
               e.stopPropagation();
               setIndex(index < images.length - 1 ? index + 1 : 0);
@@ -71,7 +92,7 @@ export default function Lightbox({
         </>
       )}
       <div
-        className="relative max-w-5xl max-h-[85vh] w-full h-full"
+        className="relative w-full h-full max-w-5xl max-h-[80vh] m-4 md:mx-16"
         onClick={(e) => e.stopPropagation()}
       >
         <Image
@@ -79,12 +100,13 @@ export default function Lightbox({
           alt={images[index].alt}
           fill
           className="object-contain"
-          sizes="90vw"
+          sizes="95vw"
         />
       </div>
       {images.length > 1 && (
         <div className="absolute bottom-4 text-white/60 text-sm">
           {index + 1} / {images.length}
+          <span className="md:hidden text-white/40 ml-2">← swipe →</span>
         </div>
       )}
     </div>

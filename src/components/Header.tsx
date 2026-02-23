@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
@@ -13,17 +13,17 @@ export default function Header() {
   return (
     <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4">
-        <nav className="flex items-center justify-between h-16">
+        <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-2 -ml-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation"
           >
             <div className="space-y-1.5">
-              <span className={`block w-6 h-0.5 bg-white transition-transform ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-white transition-opacity ${isOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-white transition-transform ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-white transition-transform duration-200 ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-white transition-opacity duration-200 ${isOpen ? 'opacity-0' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-white transition-transform duration-200 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
             </div>
           </button>
 
@@ -37,7 +37,6 @@ export default function Header() {
             <li className="relative group">
               <button
                 className="text-white hover:text-mattone-gold transition-colors flex items-center gap-1"
-                onClick={() => setApartmentsOpen(!apartmentsOpen)}
               >
                 {t('apartments')}
                 <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,39 +71,49 @@ export default function Header() {
           <LanguageSwitcher />
         </nav>
 
-        {/* Mobile nav */}
-        {isOpen && (
-          <div className="md:hidden pb-4">
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="block text-white hover:text-mattone-gold py-1" onClick={() => setIsOpen(false)}>
-                  {t('home')}
-                </Link>
-              </li>
-              {(['typA', 'typB', 'typC', 'typD'] as const).map((typ) => (
-                <li key={typ}>
+        {/* Mobile nav - slide down */}
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-4' : 'max-h-0'}`}>
+          <ul className="space-y-1 text-sm">
+            <li>
+              <Link href="/" className="block text-white hover:text-mattone-gold py-2 px-2 rounded" onClick={() => setIsOpen(false)}>
+                {t('home')}
+              </Link>
+            </li>
+            <li>
+              <button
+                className="flex items-center justify-between w-full text-white hover:text-mattone-gold py-2 px-2 rounded"
+                onClick={() => setApartmentsOpen(!apartmentsOpen)}
+              >
+                {t('apartments')}
+                <svg className={`w-4 h-4 transition-transform duration-200 ${apartmentsOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className={`overflow-hidden transition-all duration-200 ${apartmentsOpen ? 'max-h-48' : 'max-h-0'}`}>
+                {(['typA', 'typB', 'typC', 'typD'] as const).map((typ) => (
                   <Link
+                    key={typ}
                     href={`/apartments/${typ.replace('typ', 'typ-').toLowerCase()}`}
-                    className="block text-white/80 hover:text-mattone-gold py-1 pl-4"
+                    className="block text-white/80 hover:text-mattone-gold py-1.5 pl-6"
                     onClick={() => setIsOpen(false)}
                   >
                     {t(typ)}
                   </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/angebote" className="block text-white hover:text-mattone-gold py-1" onClick={() => setIsOpen(false)}>
-                  {t('offers')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/kontakt" className="block text-white hover:text-mattone-gold py-1" onClick={() => setIsOpen(false)}>
-                  {t('contact')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
+                ))}
+              </div>
+            </li>
+            <li>
+              <Link href="/angebote" className="block text-white hover:text-mattone-gold py-2 px-2 rounded" onClick={() => setIsOpen(false)}>
+                {t('offers')}
+              </Link>
+            </li>
+            <li>
+              <Link href="/kontakt" className="block text-white hover:text-mattone-gold py-2 px-2 rounded" onClick={() => setIsOpen(false)}>
+                {t('contact')}
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );
