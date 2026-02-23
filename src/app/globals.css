@@ -15,7 +15,7 @@
 
 /* Smooth scrolling */
 html {
-  overflow-y: scroll;
+  
   scroll-behavior: smooth;
 }
 
