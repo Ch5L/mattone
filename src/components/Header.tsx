@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -9,10 +10,21 @@ export default function Header() {
   const t = useTranslations('nav');
   const [isOpen, setIsOpen] = useState(false);
   const [apartmentsOpen, setApartmentsOpen] = useState(false);
+  const [scrollbarWidth, setScrollbarWidth] = useState(0);
+  const pathname = usePathname();
+
+  // Re-measure scrollbar width on every route change
+  useEffect(() => {
+    // Small delay to let the new page content render and scrollbar settle
+    const timer = setTimeout(() => {
+      setScrollbarWidth(window.innerWidth - document.documentElement.clientWidth);
+    }, 50);
+    return () => clearTimeout(timer);
+  }, [pathname]);
 
   return (
     <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4" style={{ marginRight: `max(auto, ${scrollbarWidth}px)`, paddingRight: scrollbarWidth > 0 ? scrollbarWidth : undefined }}>
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
           <button
@@ -68,8 +80,7 @@ export default function Header() {
             </li>
           </ul>
 
-          {/* Spacer to keep justify-between working */}
-          <div className="w-[52px]" />
+          <LanguageSwitcher />
         </nav>
 
         {/* Mobile nav - slide down */}
@@ -115,11 +126,6 @@ export default function Header() {
             </li>
           </ul>
         </div>
-      </div>
-
-      {/* Language switcher - fixed to viewport, independent of header layout */}
-      <div className="fixed top-0 right-4 h-14 md:h-16 flex items-center z-50">
-        <LanguageSwitcher />
       </div>
     </header>
   );
