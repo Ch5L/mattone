@@ -105,7 +105,7 @@ export default async function LocaleLayout({
       <body className="bg-mattone-light text-mattone-text font-sans antialiased">
         <NextIntlClientProvider>
           <Header />
-          <main className="min-h-screen">{children}</main>
+          <main>{children}</main>
           <Footer />
           <CookieConsent />
         </NextIntlClientProvider>
