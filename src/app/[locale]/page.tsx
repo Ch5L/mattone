@@ -5,6 +5,7 @@ import Gallery from '@/components/Gallery';
 import ApartmentCards from '@/components/ApartmentCards';
 import Distances from '@/components/Distances';
 import Reviews from '@/components/Reviews';
+import BookingCTA from '@/components/BookingCTA';
 
 export default async function HomePage({
   params,
@@ -46,15 +47,8 @@ function HomeContent() {
           </div>
 
           {/* Booking CTA */}
-          <div className="mt-10 md:mt-14 text-center animate-fade-in-up delay-200">
-            <a
-              href="https://www.booking.com/hotel/at/mattone-apartments.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-mattone-gold text-white px-8 py-3 rounded-lg text-sm md:text-base font-medium hover:bg-mattone-brown transition-colors duration-300 shadow-md hover:shadow-lg"
-            >
-              {t('book_cta')} →
-            </a>
+          <div className="mt-10 md:mt-14 animate-fade-in-up delay-200">
+            <BookingCTA />
           </div>
 
           <div className="mt-10 md:mt-14 animate-fade-in-up delay-300">

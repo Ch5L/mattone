@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Lightbox from '@/components/Lightbox';
+import BookingCTA from '@/components/BookingCTA';
 
 const apartmentData: Record<string, {
   key: 'typA' | 'typB' | 'typC' | 'typD';
@@ -137,17 +138,10 @@ export default function ApartmentContent({ type }: { type: string }) {
             </div>
           </div>
 
-          {/* CTA with Booking.com button */}
-          <div className="mt-10 md:mt-14 text-center animate-fade-in-up delay-200">
+          {/* CTA */}
+          <div className="mt-10 md:mt-14 animate-fade-in-up delay-200">
             <p className="text-center text-lg md:text-xl text-mattone-brown dark:text-mattone-cream font-heading font-medium mb-5">{t('cta')}</p>
-            <a
-              href="https://www.booking.com/hotel/at/mattone-apartments.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-mattone-gold text-white px-8 py-3 rounded-lg text-sm md:text-base font-medium hover:bg-mattone-brown transition-colors duration-300 shadow-md hover:shadow-lg"
-            >
-              {t('book_now')} →
-            </a>
+            <BookingCTA />
           </div>
 
           {data.gallery.length > 0 && (

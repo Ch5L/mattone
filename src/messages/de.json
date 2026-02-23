@@ -131,7 +131,8 @@
     "email_label": "Email",
     "website": "www.mattone.at",
     "maps_text": "Unser Standort auf Google Maps:",
-    "maps_url": "https://goo.gl/maps/c4jFJUesgEv8kMdv6"
+    "maps_url": "https://goo.gl/maps/c4jFJUesgEv8kMdv6",
+    "form_title": "Schreiben Sie uns"
   },
   "impressum": {
     "title": "Impressum",
@@ -212,5 +213,24 @@
     "footnote_bedroom": "Kombinierter Wohn-/Schlafbereich",
     "footnote_partial": "Teilweise vorhanden (je nach Apartment)",
     "footnote_double_tv": "Flatscreen in Wohn- und Schlafzimmer"
+  },
+  "contact_form": {
+    "field_name": "Name",
+    "field_email": "E-Mail",
+    "field_phone": "Telefon (optional)",
+    "field_message": "Nachricht",
+    "placeholder_name": "Ihr Name",
+    "placeholder_email": "ihre@email.at",
+    "placeholder_phone": "+43 ...",
+    "placeholder_message": "Ihre Nachricht an uns...",
+    "submit": "Anfrage senden ✉️",
+    "hint": "Öffnet Ihr E-Mail-Programm mit den ausgefüllten Daten",
+    "email_subject": "Anfrage über mattone.at"
+  },
+  "booking_cta": {
+    "direct": "Direkt anfragen",
+    "best_price": "Bestpreis-Garantie bei Direktbuchung",
+    "or": "oder buchen über",
+    "booking": "Booking.com"
   }
 }

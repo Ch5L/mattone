@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import ContactForm from '@/components/ContactForm';
 import { setRequestLocale } from 'next-intl/server';
 
 export default async function KontaktPage({
