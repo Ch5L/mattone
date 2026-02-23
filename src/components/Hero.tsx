@@ -21,9 +21,9 @@ export default function Hero() {
         <Image
           src="/images/theme/logo_mattone_clean.png"
           alt="Mattone Apartments"
-          width={400}
-          height={340}
-          className="mx-auto w-[220px] md:w-[380px] h-auto drop-shadow-lg"
+          width={434}
+          height={358}
+          className="mx-auto w-[280px] md:w-[450px] h-auto drop-shadow-lg"
           priority
         />
       </div>

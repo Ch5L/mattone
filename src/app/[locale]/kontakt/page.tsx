@@ -43,11 +43,11 @@ function ContactContent() {
             </div>
           </div>
 
-          {/* Google Maps embed - correct coordinates: 47.73779, 16.20902 */}
+          {/* Google Maps embed - zoomed in more (z=17) */}
           <div className="animate-fade-in-up delay-200">
             <div className="rounded-xl overflow-hidden shadow-sm border border-mattone-cream/50">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.5!2d16.20902!3d47.73779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476dc53f7c6bc8d3%3A0x8d2e90fd38a01e9d!2sMattone+Apartments!5e0!3m2!1sen!2sat!4v1700000000000!5m2!1sen!2sat"
+                src="https://www.google.com/maps?q=47.73779,16.20902&z=17&output=embed"
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
