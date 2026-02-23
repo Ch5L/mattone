@@ -51,7 +51,7 @@ export default function Footer() {
             </a>
           </nav>
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} MATTONE GmbH
+            © {new Date().getFullYear()} Mattone GmbH
           </p>
         </div>
       </div>
