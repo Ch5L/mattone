@@ -83,9 +83,8 @@ export default function ApartmentContent({ type }: { type: string }) {
           height={80}
           className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-[120px] md:w-[200px] h-auto"
         />
-        {/* Floor plans - horizontal scroll on mobile */}
         {data.floorPlans.length > 0 && (
-          <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex gap-2 overflow-x-auto max-w-[60%] md:max-w-none scrollbar-hide">
+          <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 flex gap-2 overflow-x-auto max-w-[55%] md:max-w-none scrollbar-hide">
             {data.floorPlans.map((fp, i) => (
               <button
                 key={fp.src}
@@ -109,38 +108,38 @@ export default function ApartmentContent({ type }: { type: string }) {
       <section className="bg-mattone-cream py-6 md:py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-2xl md:text-3xl font-semibold text-mattone-brown">{t(`${data.key}.title`)}</h1>
-          <p className="text-mattone-gold mt-1 text-sm md:text-base">{t(`${data.key}.subtitle`)}</p>
+          <p className="text-mattone-gold mt-1 text-sm md:text-base text-center">{t(`${data.key}.subtitle`)}</p>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <p className="text-base md:text-lg text-mattone-text leading-relaxed mb-4">
+          <p className="text-justify text-base md:text-lg text-mattone-text leading-relaxed mb-4">
             {t(`${data.key}.description`)}
           </p>
-          <p className="text-mattone-brown font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
+          <p className="text-left text-mattone-brown font-medium mb-6 md:mb-8">{t(`${data.key}.maxGuests`)}</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div>
               <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('equipment_title')}</h3>
-              <p className="text-mattone-text leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
+              <p className="text-justify text-mattone-text leading-relaxed text-sm md:text-base">{t(`${data.key}.equipment`)}</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-mattone-brown mb-3">{t('info_title')}</h3>
-              <ul className="space-y-2 text-mattone-text text-sm md:text-base">
-                <li>{t('checkin')} · {t('checkout')}</li>
-                <li>{t('cleaning')}</li>
-                <li>{t('kitchen_fee')}</li>
-                <li>{t('no_pets')}</li>
-                <li>{t('wifi')}</li>
-                <li>{t('free_parking')}</li>
+              <ul className="space-y-2 text-mattone-text text-sm md:text-base list-none">
+                <li className="text-left">{t('checkin')} · {t('checkout')}</li>
+                <li className="text-left">{t('cleaning')}</li>
+                <li className="text-left">{t('kitchen_fee')}</li>
+                <li className="text-left">{t('no_pets')}</li>
+                <li className="text-left">{t('wifi')}</li>
+                <li className="text-left">{t('free_parking')}</li>
               </ul>
             </div>
           </div>
 
           <div className="mt-8 md:mt-10 text-center">
-            <p className="text-lg md:text-xl text-mattone-brown font-medium">{t('cta')}</p>
+            <p className="text-center text-lg md:text-xl text-mattone-brown font-medium">{t('cta')}</p>
           </div>
 
           {data.gallery.length > 0 && (

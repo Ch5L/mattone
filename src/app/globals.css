@@ -11,8 +11,8 @@
   --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Block/justified text globally */
-p {
+/* Justified text only where explicitly applied */
+.text-justify {
   text-align: justify;
 }
 

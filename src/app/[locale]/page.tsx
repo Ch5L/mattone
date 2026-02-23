@@ -36,12 +36,12 @@ function HomeContent() {
 
           <div className="max-w-none text-mattone-text space-y-4 md:space-y-6 text-sm md:text-base">
             <p className="text-center leading-relaxed">{t('intro')}</p>
-            <p className="leading-relaxed">{t('kitchen')}</p>
-            <p className="leading-relaxed">{t('bedrooms')}</p>
-            <p className="leading-relaxed">{t('cleaning')}</p>
-            <p className="leading-relaxed">{t('parking')}</p>
-            <p className="leading-relaxed">{t('breakfast')}</p>
-            <p className="leading-relaxed">{t('dining')}</p>
+            <p className="text-justify leading-relaxed">{t('kitchen')}</p>
+            <p className="text-justify leading-relaxed">{t('bedrooms')}</p>
+            <p className="text-justify leading-relaxed">{t('cleaning')}</p>
+            <p className="text-justify leading-relaxed">{t('parking')}</p>
+            <p className="text-justify leading-relaxed">{t('breakfast')}</p>
+            <p className="text-justify leading-relaxed">{t('dining')}</p>
           </div>
 
           <div className="mt-8 md:mt-12">

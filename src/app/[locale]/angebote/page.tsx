@@ -16,12 +16,12 @@ function OffersContent() {
   const t = useTranslations('offers');
 
   return (
-    <section className="pt-24 pb-16 min-h-[60vh]">
+    <section className="pt-20 md:pt-24 pb-12 md:pb-16 min-h-[60vh]">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="bg-mattone-cream py-8 px-4 rounded-xl text-center mb-12">
-          <h1 className="text-3xl font-semibold text-mattone-brown">{t('title')}</h1>
+        <div className="bg-mattone-cream py-6 md:py-8 px-4 rounded-xl text-center mb-8 md:mb-12">
+          <h1 className="text-2xl md:text-3xl font-semibold text-mattone-brown">{t('title')}</h1>
         </div>
-        <p className="text-center text-mattone-text text-lg">{t('empty')}</p>
+        <p className="text-center text-mattone-text text-base md:text-lg">{t('empty')}</p>
       </div>
     </section>
   );
