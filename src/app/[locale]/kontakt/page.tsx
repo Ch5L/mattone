@@ -31,11 +31,11 @@ function ContactContent() {
               <p className="text-left dark:text-gray-100">{t('street')}</p>
               <p className="text-left dark:text-gray-100">{t('city')}</p>
               <div className="pt-4 md:pt-5 space-y-3 border-t border-mattone-cream dark:border-[#3d3229] mt-4">
-                <p className="text-left flex items-center gap-2">
+                <p className="text-left flex items-center gap-2 dark:text-gray-100">
                   <span className="text-mattone-gold">📞</span>
                   {t('phone_label')}: <a href={`tel:${t('phone')}`} className="text-mattone-gold hover:underline font-medium">{t('phone')}</a>
                 </p>
-                <p className="text-left flex items-center gap-2">
+                <p className="text-left flex items-center gap-2 dark:text-gray-100">
                   <span className="text-mattone-gold">✉️</span>
                   {t('email_label')}: <a href={`mailto:${t('email')}`} className="text-mattone-gold hover:underline font-medium">{t('email')}</a>
                 </p>
