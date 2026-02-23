@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Gallery from '@/components/Gallery';
 import ApartmentCards from '@/components/ApartmentCards';
 import Distances from '@/components/Distances';
+import Reviews from '@/components/Reviews';
 
 export default async function HomePage({
   params,
@@ -73,8 +74,19 @@ function HomeContent() {
         </div>
       </section>
 
-      {/* Apartment Cards */}
+      {/* Reviews */}
       <section className="py-12 md:py-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold text-mattone-brown mb-3">{t('reviews_title')}</h2>
+            <div className="section-divider" />
+          </div>
+          <Reviews />
+        </div>
+      </section>
+
+      {/* Apartment Cards */}
+      <section className="bg-mattone-cream py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="font-heading text-2xl md:text-3xl font-semibold text-mattone-brown mb-3">{t('apartments_title')}</h2>

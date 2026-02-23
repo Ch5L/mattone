@@ -30,7 +30,8 @@
     "golf_note": "Golfplatz Linsberg direkt gegenüber",
     "gallery_title": "Impressionen",
     "apartments_title": "Unsere Apartments",
-    "book_cta": "Jetzt buchen"
+    "book_cta": "Jetzt buchen",
+    "reviews_title": "Was unsere Gäste sagen"
   },
   "distances": {
     "therme": "Therme Linsberg Asia",
@@ -165,5 +166,29 @@
     "text": "Diese Website verwendet Cookies, um Ihnen das bestmögliche Erlebnis zu bieten. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies gemäß unserer Datenschutzrichtlinie zu.",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
+  },
+  "reviews": {
+    "title": "Was unsere Gäste sagen",
+    "rating": "9.3",
+    "rating_text": "von 10 auf Booking.com",
+    "review_count": "322+ Bewertungen",
+    "cta": "Alle Bewertungen auf Booking.com lesen",
+    "items": [
+      {
+        "text": "We loved everything about Mattone Aparthotel thus the rating for a perfect score! Families can enjoy this cosy, clean place and its quiet location and very beautiful surroundings.",
+        "author": "Booking.com Gast",
+        "rating": "10"
+      },
+      {
+        "text": "Super friendly host, very spacious apartment, very clean, well equipped kitchen, comfy bed, good breakfast, parking, wifi… perfect!",
+        "author": "Booking.com Gast",
+        "rating": "10"
+      },
+      {
+        "text": "What a wonderful place to stay — the apartments have everything you need. The beds are so comfy you will have a great night sleep. The hosts are kind, friendly and very accommodating.",
+        "author": "TripAdvisor Gast",
+        "rating": "5"
+      }
+    ]
   }
 }
