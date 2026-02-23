@@ -16,27 +16,7 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
-
-html:hover {
-  scrollbar-color: rgba(0,0,0,0.2) transparent;
-}
-
-/* Webkit: overlay scrollbar that doesn't affect layout */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 3px;
-}
-html:hover ::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.15);
+  overflow-y: overlay;
 }
 
 /* Justified text only where explicitly applied */
