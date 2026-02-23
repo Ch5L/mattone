@@ -29,7 +29,8 @@
     "distances_title": "Entfernungen zu diversen Einrichtungen:",
     "golf_note": "Golfplatz Linsberg direkt gegenüber",
     "gallery_title": "Impressionen",
-    "apartments_title": "Unsere Apartments"
+    "apartments_title": "Unsere Apartments",
+    "book_cta": "Jetzt buchen"
   },
   "distances": {
     "therme": "Therme Linsberg Asia",
@@ -63,7 +64,9 @@
     "autobahn_sued": "Autobahn Wr. Neustadt Süd",
     "autobahn_sued_dist": "6 km",
     "autobahn_seebenstein": "Autobahn Seebenstein",
-    "autobahn_seebenstein_dist": "7 km"
+    "autobahn_seebenstein_dist": "7 km",
+    "therme_url": "https://www.linsbergasia.at",
+    "golf_foehrenwald_url": "https://www.golffoehrenwald.at"
   },
   "apartments": {
     "typA": {
@@ -108,7 +111,8 @@
     "wifi": "Kostenloser WLAN Zugang in allen Apartments, sowie im Außenbereich.",
     "free_parking": "Kostenloser Parkplatz.",
     "cta": "Gerne erstellen wir Ihnen ein Angebot für Ihr gewünschtes Apartment.",
-    "more_info": "mehr Information"
+    "more_info": "mehr Information",
+    "book_now": "Jetzt buchen auf Booking.com"
   },
   "offers": {
     "title": "Angebote",

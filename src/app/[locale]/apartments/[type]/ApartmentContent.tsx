@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
 import Lightbox from '@/components/Lightbox';
 
 const apartmentData: Record<string, {
@@ -60,7 +59,6 @@ const apartmentData: Record<string, {
 export default function ApartmentContent({ type }: { type: string }) {
   const data = apartmentData[type];
   const t = useTranslations('apartments');
-  const nav = useTranslations('nav');
   const [lightbox, setLightbox] = useState<{ images: { src: string; alt: string }[]; index: number } | null>(null);
 
   if (!data) return null;
@@ -139,15 +137,17 @@ export default function ApartmentContent({ type }: { type: string }) {
             </div>
           </div>
 
-          {/* CTA with contact button */}
+          {/* CTA with Booking.com button */}
           <div className="mt-10 md:mt-14 text-center animate-fade-in-up delay-200">
             <p className="text-center text-lg md:text-xl text-mattone-brown font-heading font-medium mb-5">{t('cta')}</p>
-            <Link
-              href="/kontakt"
+            <a
+              href="https://www.booking.com/hotel/at/mattone-apartments.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-mattone-gold text-white px-8 py-3 rounded-lg text-sm md:text-base font-medium hover:bg-mattone-brown transition-colors duration-300 shadow-md hover:shadow-lg"
             >
-              {nav('contact')} →
-            </Link>
+              {t('book_now')} →
+            </a>
           </div>
 
           {data.gallery.length > 0 && (

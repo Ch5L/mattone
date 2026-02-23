@@ -10,8 +10,31 @@ const rightColumn = [
   'autobahn_sued', 'autobahn_seebenstein',
 ] as const;
 
+const linkedItems: Record<string, string> = {
+  therme: 'therme_url',
+  golf_foehrenwald: 'golf_foehrenwald_url',
+};
+
 export default function Distances() {
   const t = useTranslations();
+
+  const renderRow = (key: string) => {
+    const url = linkedItems[key] ? t(`distances.${linkedItems[key]}`) : null;
+    const label = url ? (
+      <a href={url} target="_blank" rel="noopener noreferrer" className="text-mattone-brown font-medium hover:text-mattone-gold transition-colors underline decoration-mattone-gold/30 underline-offset-2">
+        {t(`distances.${key}`)}
+      </a>
+    ) : (
+      <span className="text-mattone-brown font-medium">{t(`distances.${key}`)}</span>
+    );
+
+    return (
+      <div key={key} className="flex justify-between text-xs md:text-sm border-b border-mattone-cream pb-1 gap-2">
+        {label}
+        <span className="text-mattone-text shrink-0">{t(`distances.${key}_dist`)}</span>
+      </div>
+    );
+  };
 
   return (
     <div>
@@ -21,20 +44,10 @@ export default function Distances() {
       <p className="text-mattone-gold font-medium mb-4 text-sm md:text-base text-left">{t('home.golf_note')}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div className="space-y-2">
-          {leftColumn.map((key) => (
-            <div key={key} className="flex justify-between text-xs md:text-sm border-b border-mattone-cream pb-1 gap-2">
-              <span className="text-mattone-brown font-medium">{t(`distances.${key}`)}</span>
-              <span className="text-mattone-text shrink-0">{t(`distances.${key}_dist`)}</span>
-            </div>
-          ))}
+          {leftColumn.map(renderRow)}
         </div>
         <div className="space-y-2">
-          {rightColumn.map((key) => (
-            <div key={key} className="flex justify-between text-xs md:text-sm border-b border-mattone-cream pb-1 gap-2">
-              <span className="text-mattone-brown font-medium">{t(`distances.${key}`)}</span>
-              <span className="text-mattone-text shrink-0">{t(`distances.${key}_dist`)}</span>
-            </div>
-          ))}
+          {rightColumn.map(renderRow)}
         </div>
       </div>
     </div>
