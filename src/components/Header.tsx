@@ -13,18 +13,21 @@ export default function Header() {
   const [scrollbarWidth, setScrollbarWidth] = useState(0);
   const pathname = usePathname();
 
-  // Re-measure scrollbar width on every route change
   useEffect(() => {
-    // Small delay to let the new page content render and scrollbar settle
-    const timer = setTimeout(() => {
+    const measure = () => {
       setScrollbarWidth(window.innerWidth - document.documentElement.clientWidth);
-    }, 50);
+    };
+    measure();
+    const timer = setTimeout(measure, 100);
     return () => clearTimeout(timer);
   }, [pathname]);
 
   return (
     <header className="bg-mattone-dark/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4" style={{ marginRight: `max(auto, ${scrollbarWidth}px)`, paddingRight: scrollbarWidth > 0 ? scrollbarWidth : undefined }}>
+      <div
+        className="max-w-7xl mx-auto pl-4"
+        style={{ paddingRight: 16 + scrollbarWidth }}
+      >
         <nav className="flex items-center justify-between h-14 md:h-16">
           {/* Mobile menu button */}
           <button
