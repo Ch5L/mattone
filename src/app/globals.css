@@ -10,3 +10,8 @@
   --color-mattone-accent: #8b7355;
   --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Block/justified text globally */
+p {
+  text-align: justify;
+}
