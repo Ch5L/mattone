@@ -103,7 +103,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-mattone-light dark:bg-[#1a1410] text-mattone-text dark:text-gray-200 font-sans antialiased h-screen supports-[height:100svh]:h-svh supports-[height:100dvh]:h-dvh overflow-hidden">
+      <body className="bg-mattone-light dark:bg-[#1a1410] text-mattone-text dark:text-gray-200 font-sans antialiased overflow-hidden">
         <NextIntlClientProvider>
           <Header />
           <ScrollContainer>
