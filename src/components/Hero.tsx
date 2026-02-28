@@ -5,7 +5,7 @@ export default function Hero() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative h-[55vh] md:h-[65vh] min-h-[380px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[55vh] supports-[height:100svh]:h-[55svh] md:h-[65vh] md:supports-[height:100svh]:h-[65svh] min-h-[380px] flex items-start md:items-center justify-center pt-10 md:pt-0 overflow-hidden">
       <Image
         src="/images/theme/header-bg.jpg"
         alt="Mattone Apartments"
